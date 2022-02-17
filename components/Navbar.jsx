@@ -10,14 +10,16 @@ export default function Navbar() {
     >
       <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
         <div className="flex items-center justify-between w-full md:w-auto">
-          <a href="/">
-            <span className="sr-only">Workflow</span>
-            <FontAwesomeIcon
-              icon={faMobileScreenButton}
-              color="#10b981"
-              size="2xl"
-            />
-          </a>
+          <Link href="/">
+            <a>
+              <span className="sr-only">Workflow</span>
+              <FontAwesomeIcon
+                icon={faMobileScreenButton}
+                color="#10b981"
+                size="2xl"
+              />
+            </a>
+          </Link>
           <div className="mr-2 flex items-center md:hidden">
             <button
               type="button"

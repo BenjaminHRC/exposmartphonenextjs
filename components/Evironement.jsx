@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "./Navbar";
 
 export default function Environement() {
@@ -10,29 +11,44 @@ export default function Environement() {
       <div className="flex justify-center items-center gap-20 w-full">
         <div className="max-w-xs">
           <p className="text-white text-center">
-            D'après le site ademe.fr je cite “88% des français changent leur
+            {`D'après le site ademe.fr je cite “88% des français changent leur
             téléphone portable alors qu’il fonctionne encore...”, pourquoi ? Car
             le renouvellement des smartphones est trop rapide. Pour prendre par
             exemple Xiaomi, le fabricant chinois qui a inondé le marché français
             de ces smartphones. La recette est simple Xiaomi sortait un
             smartphone presque toutes les deux semaines ou tous les mois. Cela
             pour pouvoir toucher tout le monde et susciter l’envie des
-            utilisateurs. Mais quels impacts sur l'écologie ?
+            utilisateurs. Mais quels impacts sur l'écologie ?`}
           </p>
         </div>
-        <img src="/xiaomi.png" className="object-fill h-96 w-50" />
+        <div className="basis-3/12 h-50 w-20">
+          <Image
+            src="/xiaomi.png"
+            alt=""
+            title=""
+            layout="responsive"
+            width="100%"
+            height="100%"
+            objectFit="cover"
+          />
+        </div>
       </div>
       <div className="flex">
-        <div className="basis-5/12 flex justify-end">
-          <img
+        <div className="basis-5/12">
+          <Image
             src="/vie-smartphone-transparent.png"
             alt="photo"
             className="object-cover"
+            title=""
+            layout="responsive"
+            width="100%"
+            height="100%"
+            objectFit="cover"
           />
         </div>
         <div className="basis-6/12 flex items-center max-w-2xl">
           <p className="text-white">
-            Le cycle de vie d’un smartphone est non écologique dans à peu près
+            {`Le cycle de vie d’un smartphone est non écologique dans à peu près
             toutes les étapes de vie. Je m'explique, il y a cinq étapes dans le
             cycle de vie d’un smartphone. Ces étapes sont: L’exploitation de
             matière première (généralement des minerais). La fabrication
@@ -50,14 +66,14 @@ export default function Environement() {
             aucun intérêt), soit le jeter dans une poubelle (ce n’est pas
             conseillé non plus), soit le vendre ou le donner à une entreprise
             pour qu’elle puisse le recycler. Les deux dernière méthode sont les
-            plus conseillées pour notre planète.
+            plus conseillées pour notre planète.`}
           </p>
         </div>
       </div>
       <div className="flex gap-20">
         <div className="basis-7/12 flex justify-end items-center">
           <p className="text-white text-left max-w-xl">
-            Nous allons maintenant nous attardé sur les deux premiere etapes qui
+            {`Nous allons maintenant nous attardé sur les deux premiere etapes qui
             je cite “La fabrication d’un smartphone (de l’extraction des
             minerais à l’assemblage final) est responsable d’environ trois
             quarts de ces impacts”. La première étape est l’extraction minière
@@ -70,14 +86,18 @@ export default function Environement() {
             fabrication des smartphones augmente les gaz à effet de serre. Et
             pose aussi un problème d'éthique. Car les gens qui les fabriquent
             sont souvent jeunes, sous payés et travaillent dans des conditions
-            déplorables. Et c’est la même chose pour les minerais.
+            déplorables. Et c’est la même chose pour les minerais.`}
           </p>
         </div>
         <div className="basis-6/12">
-          <img
+          <Image
             src="/minerai.jpg"
             alt="photo minerai"
-            className="object-cover"
+            title=""
+            layout="responsive"
+            width="100%"
+            height="100%"
+            objectFit="cover"
           />
         </div>
       </div>

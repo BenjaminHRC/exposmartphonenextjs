@@ -122,7 +122,7 @@ export default function Economie() {
                 <div className="py-1 opacity-100">
                   <div className="p-4">
                     <h2 className="font-bold mb-2 md:mt-4 text-2xl text-gray-100">
-                      L'utilisation d’internet sur mobile{" "}
+                      {"L'utilisation d’internet sur mobile "}
                       <span className="text-xl">(2020)</span>
                     </h2>
                     <ul className="list-disc break-words text-sm text-gray-100 px-2 mr-1">
@@ -131,8 +131,9 @@ export default function Economie() {
                         internet.
                       </li>
                       <li>
-                        91% de l’ensemble des utilisateurs internet se
-                        connectent sur le web à partir d’un smartphone.
+                        {
+                          "91% de l’ensemble des utilisateurs internet se connectent sur le web à partir d’un smartphone."
+                        }
                       </li>
                     </ul>
                   </div>
@@ -166,18 +167,18 @@ export default function Economie() {
                 <div className="py-1 opacity-100">
                   <div className="p-4">
                     <h2 className="font-bold mb-2 md:mt-4 text-2xl text-gray-100">
-                      Utilisation des systèmes d’exploitations sur mobile
+                      {"Utilisation des systèmes d’exploitations sur mobile"}
                     </h2>
                     <ul className="list-disc break-words text-sm text-gray-100 px-2 mr-1">
                       <li>
-                        74% du trafic internet en 2019 s’est fait à partir d’un
+                        {`74% du trafic internet en 2019 s’est fait à partir d’un
                         appareil Android. C’est une baisse de 1,4% de Dec. 2018
-                        à Dec. 2019.
+                        à Dec. 2019.`}
                       </li>
                       <li>
-                        25% du trafic internet en 2019 s’est fait à partir d’un
+                        {`25% du trafic internet en 2019 s’est fait à partir d’un
                         appareil iOS. Soit une augmentation de 13% de Dec 2018 à
-                        Dec 2019.
+                        Dec 2019.`}
                       </li>
                     </ul>
                   </div>

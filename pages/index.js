@@ -185,7 +185,7 @@ export default function Home() {
                 <br />
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-200 sm:text-5xl md:text-6xl">
                   <span className="block xl:block">Les smartphones </span>
-                  <span className="block xl:block">et l'impact</span>
+                  <span className="block xl:block">{"et l'impact"}</span>
                   <span className="block text-emerald-500 xl:block">
                     environemental
                   </span>
@@ -196,27 +196,29 @@ export default function Home() {
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
-                    <a
-                      href="/main"
-                      className="w-full flex items-center justify-around px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-500 hover:bg-emerald-400 md:py-4 md:text-lg md:px-10"
-                    >
-                      <span className="px-2">En savoir plus </span>
-                      <FontAwesomeIcon
-                        icon={faArrowRightLong}
-                        className="px-2"
-                      />
-                    </a>
+                    <Link href="/main">
+                      <a className="w-full flex items-center justify-around px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-500 hover:bg-emerald-400 md:py-4 md:text-lg md:px-10">
+                        <span className="px-2">En savoir plus </span>
+                        <FontAwesomeIcon
+                          icon={faArrowRightLong}
+                          className="px-2"
+                        />
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </main>
           </div>
         </div>
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+        <div className="lg:fixed lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <Image
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="/bg_forest.jpg"
             alt=""
+            title=""
+            layout="fill"
+            objectFit="cover"
           />
         </div>
       </section>

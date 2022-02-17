@@ -8,7 +8,9 @@ export default function History() {
   return (
     <section id="history" className="snap-start h-screen px-8">
       <Navbar />
-      <h1 className="text-4xl font-bold py-3 text-white">Un peu d'histoire</h1>
+      <h1 className="text-4xl font-bold py-3 text-white">
+        {"Un peu d'histoire"}
+      </h1>
       <div className="h-full pb-20 grid grid-cols-2 gap-10 place-items-center">
         <div className="px-4 pb-10 max-w-2xl">
           <div className="bg-white bg-opacity-10 md:shadow-xl rounded-lg">
@@ -19,14 +21,14 @@ export default function History() {
                   ou internet commence à être connu du grand public
                 </h2>
                 <p className="break-words text-sm text-gray-100 px-2 mr-1">
-                  Les premiers smartphones sont apparus dans les années 1990, la
+                  {`Les premiers smartphones sont apparus dans les années 1990, la
                   ou internet commence à être connu du grand public. À cette
                   époque, les smartphones utilisaient déjà certaines
                   technologies que nos actuels machines utilisent. Comme par
                   exemple l'écran tactile, internet, GPS, clavier intégré
                   (clavier physique)... Ce qui était déjà une prouesse et
                   impressionnant de voir leur vision long terme et d'avenir.
-                  Trois constructeur était dans la course dans les années 1990 :
+                  Trois constructeur était dans la course dans les années 1990 :`}
                 </p>
                 <ul className="list-disc break-words text-sm text-gray-100 px-6 py-2 mr-1">
                   <li className="">IBM avec leurs premiers Simon en 1993</li>
@@ -34,7 +36,7 @@ export default function History() {
                   <li>NOKIA est leur gamme Communicator 9000</li>
                 </ul>
                 <p className="break-words text-sm text-gray-100 px-2 mr-1">
-                  Ce sont trois entreprises qui ont commencé à développer les
+                  {`Ce sont trois entreprises qui ont commencé à développer les
                   premiers smartphones. Mais le grand public n'était pas encore
                   convaincu par ces nouvelles technologies. Ce n'est qu'en 2007
                   grâce à un certains prénommé Steve Jobs que les smartphones
@@ -42,10 +44,10 @@ export default function History() {
                   premier iPhone avait mis tout le monde d’accord, de par son
                   design, son système d’exploitation simple et intuitif, son
                   écran tactile… Bref, il avait tout pour plaire et à su
-                  s’imposer parmi les géants de l'époque.
+                  s’imposer parmi les géants de l'époque.`}
                 </p>
                 <p className="break-words text-sm text-gray-100 px-2 mr-1">
-                  À l'époque trois systeme d’exploitation existaient :
+                  {"À l'époque trois systeme d’exploitation existaient :"}
                 </p>
                 <ul className="list-disc break-words text-sm text-gray-100 px-6 py-2 mr-1">
                   <li>Symbian</li>
@@ -53,9 +55,9 @@ export default function History() {
                   <li>Blackberry OS</li>
                 </ul>
                 <p className="break-words text-sm text-gray-100 px-2 mr-1">
-                  Les téléphones pouvaient supporter nativement les écrans
+                  {`Les téléphones pouvaient supporter nativement les écrans
                   tactiles mais les système d’exploitation n'était pas optimisé
-                  pour
+                  pour`}
                 </p>
               </div>
             </div>
@@ -64,21 +66,21 @@ export default function History() {
         <div className="text-white">
           <Carousel infiniteLoop={true} showThumbs={false}>
             <div>
-              <img src="/nokia2.jpg" />
+              <img src="/nokia2.jpg" alt="" />
               <p className="legend">
                 Le nokia 9110 Communicator sortie en 1998
               </p>
             </div>
             <div>
-              <img src="/palm-treo-750.jpg" />
+              <img src="/palm-treo-750.jpg" alt="" />
               <p className="legend">
                 Le Palm Treo 750 tourne sous windows mobile
               </p>
             </div>
             <div>
-              <img src="/iphone2.jpg" />
+              <img src="/iphone2.jpg" alt="" />
               <p className="legend">
-                L'iPhone 1 "This is a revelotion" Steve Jobs - 2007
+                {`L'iPhone 1 "This is a revelotion" Steve Jobs - 2007`}
               </p>
             </div>
           </Carousel>
