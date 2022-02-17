@@ -6,6 +6,7 @@ import {
   faMobileScreenButton,
   faArrowRightLong,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -70,40 +71,29 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                    <a
-                      href="/main"
-                      className="font-medium text-gray-500 hover:text-gray-200"
-                    >
-                      Histoire
-                    </a>
+                    <Link href="/main">
+                      <a className="font-medium text-gray-500 hover:text-gray-200">
+                        Histoire
+                      </a>
+                    </Link>
 
-                    <a
-                      href="/main#economie"
-                      className="font-medium text-gray-500 hover:text-gray-200"
-                    >
-                      Economie
-                    </a>
+                    <Link href="/main#economie">
+                      <a className="font-medium text-gray-500 hover:text-gray-200">
+                        Economie
+                      </a>
+                    </Link>
 
-                    <a
-                      href="/main#environnement"
-                      className="font-medium text-gray-500 hover:text-gray-200"
-                    >
-                      Environnement
-                    </a>
+                    <Link href="/main#environnement">
+                      <a className="font-medium text-gray-500 hover:text-gray-200">
+                        Environnement
+                      </a>
+                    </Link>
 
-                    <a
-                      href="#"
-                      className="font-medium text-gray-500 hover:text-gray-200"
-                    >
-                      Company
-                    </a>
-
-                    <a
-                      href="#"
-                      className="font-medium text-emerald-400 hover:text-emerald-200"
-                    >
-                      Log in
-                    </a>
+                    <Link href="#">
+                      <a className="font-medium text-emerald-400 hover:text-emerald-200">
+                        Notez moi
+                      </a>
+                    </Link>
                   </div>
                 </nav>
               </div>
@@ -153,41 +143,35 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
-                    <a
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50"
-                    >
-                      Product
-                    </a>
+                    <Link href="#">
+                      <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50">
+                        Product
+                      </a>
+                    </Link>
 
-                    <a
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50"
-                    >
-                      Features
-                    </a>
+                    <Link href="#">
+                      <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50">
+                        Features
+                      </a>
+                    </Link>
 
-                    <a
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50"
-                    >
-                      Marketplace
-                    </a>
+                    <Link href="#">
+                      <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50">
+                        Marketplace
+                      </a>
+                    </Link>
 
-                    <a
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50"
-                    >
-                      Company
-                    </a>
+                    <Link href="#">
+                      <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-200 hover:bg-gray-50">
+                        Company
+                      </a>
+                    </Link>
                   </div>
-                  <a
-                    href="#"
-                    className="block w-full px-5 py-3 text-center font-medium text-emerald-400 hover:text-emerald-200 bg-gray-50 hover:bg-gray-100"
-                  >
-                    {" "}
-                    Log in{" "}
-                  </a>
+                  <Link href="#">
+                    <a className="block w-full px-5 py-3 text-center font-medium text-emerald-400 hover:text-emerald-200 bg-gray-50 hover:bg-gray-100">
+                      Log in
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -45,33 +46,29 @@ export default function Navbar() {
         </div>
       </div>
       <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-        <a
-          href="/main#history"
-          className="font-medium text-gray-500 hover:text-gray-200"
-        >
-          Histoire
-        </a>
+        <Link href="/main#history">
+          <a className="font-medium text-gray-500 hover:text-gray-200">
+            Histoire
+          </a>
+        </Link>
 
-        <a
-          href="/main#economie"
-          className="font-medium text-gray-500 hover:text-gray-200"
-        >
-          Economie
-        </a>
+        <Link href="/main#economie">
+          <a className="font-medium text-gray-500 hover:text-gray-200">
+            Economie
+          </a>
+        </Link>
 
-        <a
-          href="/main#environnement"
-          className="font-medium text-gray-500 hover:text-gray-200"
-        >
-          Environnement
-        </a>
+        <Link href="/main#environnement">
+          <a className="font-medium text-gray-500 hover:text-gray-200">
+            Environnement
+          </a>
+        </Link>
 
-        <a
-          href="#"
-          className="font-medium text-emerald-400 hover:text-emerald-200"
-        >
-          Notez moi
-        </a>
+        <Link href="#">
+          <a className="font-medium text-emerald-400 hover:text-emerald-200">
+            Notez moi
+          </a>
+        </Link>
       </div>
     </nav>
   );
