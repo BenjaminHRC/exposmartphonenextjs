@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>USAL*</title>
+        <title>USALH</title>
       </Head>
       <section className="relative bg-gray-900 overflow-hidden h-screen">
         <div className="max-w-7xl mx-auto h-full">
@@ -88,12 +88,6 @@ export default function Home() {
                         Environnement
                       </a>
                     </Link>
-
-                    <Link href="#">
-                      <a className="font-medium text-emerald-400 hover:text-emerald-200">
-                        Notez moi
-                      </a>
-                    </Link>
                   </div>
                 </nav>
               </div>
@@ -167,11 +161,6 @@ export default function Home() {
                       </a>
                     </Link>
                   </div>
-                  <Link href="#">
-                    <a className="block w-full px-5 py-3 text-center font-medium text-emerald-400 hover:text-emerald-200 bg-gray-50 hover:bg-gray-100">
-                      Log in
-                    </a>
-                  </Link>
                 </div>
               </div>
             </div>

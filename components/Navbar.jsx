@@ -65,12 +65,6 @@ export default function Navbar() {
             Environnement
           </a>
         </Link>
-
-        <Link href="#">
-          <a className="font-medium text-emerald-400 hover:text-emerald-200">
-            Notez moi
-          </a>
-        </Link>
       </div>
     </nav>
   );
